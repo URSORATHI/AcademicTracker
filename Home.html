@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" href="Homesty.css">
+<script src="https://kit.fontawesome.com/79bb4623b2.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>MENU</h2>
+        <ul>
+            <li><a href="Home.html"><i class="fas fa-home"></i>Home</a></li>
+			
+            <li><a href="Exam.html"><i class="fas fa-graduation-cap"></i>Exam</a></li>
+			<li><a href="Tracker.html"><i class="fas fa-chart-bar"></i>Tracker</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">
+        <h2>Academic Tracker</h2>
+        
+		</div>
+    
+	<div class="container">
+    <div class="row">
+                        <div class="col-lg-12 col-xl-6 d-flex">
+                            <div class="card flex-fill">
+						
+							<div class="card-header">
+							<div class="container margin-top">
+                            
+                           
+                                <form action="Subject" method="post">
+                                                               
+						             <input type="text" name="input" class="float-left">  
+                                     <button type="Submit" class="btn btn-primary float-left"> <span id='input'>Enter</span></button>
+                                     
+                                    </form>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    
+                                  <div class="handle-counter" id="handleCounter"> 
+                                     <button class="counter-plus btn btn-primary float-right" >+</button>
+                                     <button class="counter-minus btn btn-primary float-right">-</button>
+                                      <form action= "Home" method="post">
+                                      <button type="submit" name="Submit" class="btn btn-circle btn-sm btn-primary float-centre">P</button> 
+									 <input type="text" value="0" class="float-right" name ="present">
+									 </form>
+									 </div>
+									
+                                </div>
+								</div>
+								
+                                <div class="card-body my-1">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                       
+                                       <form action = "Sub">
+                                       <button type="submit" name="Submit" class="btn btn-primary" value="1">Details</button>
+                                       </form>
+                                            
+                                        </div>
+                                    </div>						
+                                </div>
+                               
+								
+								<div class="card-header">
+								<div class="container margin-top">
+								
+								<div class="handle-counter" id="handleCounter1">
+								
+								<input type="text" name="sum" class="float-left">
+								<button type="button" class="btn btn-circle btn-sm btn-primary float-left" onclick="per()">%</button>
+								<button class="counter-plus btn btn-primary float-right" >+</button>
+									 <button class="counter-minus btn btn-primary float-right">-</button>
+									 
+									 
+									 <form action= "HomeA" method="Post">
+                                     <button type="submit" name="Submit" class="btn btn-circle btn-sm btn-primary float-left">A</button>	 
+									 <input type="text" value="0" class="float-right" name ="absent">
+									 </form>
+								
+								</div>
+									 
+								</div>
+							    </div>
+							   
+							  
+							   
+								</div>
+                        </div>
+						
+                        <div class="col-lg-12 col-xl-6 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-header">
+								<div class="container margin-top">
+								
+								<form action="Subject" method="post">
+								 <input type="text" name="input2" class="float-left">  
+								<button type="Submit" class="btn btn-primary"> <span id='input2'>Enter</span></button>
+								
+								</form>
+								<br>
+								<br>
+								
+                                <div class="handle-counter" id="handleCounter2">
+                                <button class="counter-plus btn btn-primary float-right" >+</button>
+                                 <button class="counter-minus btn btn-primary float-right" >-</button>
+                                 
+                                 <form action= "Home" method="Post">
+                                     <button type="submit" name="Submit"class="btn btn-circle btn-sm btn-primary float-left">P</button> 
+									 <input type="text" value="0" class="float-right" name="present1" >
+									 </form>
+									
+                                </div>
+                                </div>							 
+                                </div>
+                                <div class="card-body my-1">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                            
+                                            <form action = "Sub">
+                                       <button type="submit" name="Submit1" class="btn btn-primary" value="1">Details</button>
+                                       </form>
+                                            
+                                        </div>
+                                    </div>
+								</div>
+								
+								<div class="card-header">
+                                <div class="container margin-top">
+                                
+                                <div class="handle-counter" id="handleCounter3">
+                                <input type="text" name="sum1" class="float-left">
+								<button type="button" class="btn btn-circle btn-sm btn-primary float-left" onclick="per1()">%</button>
+                                <button class="counter-plus btn btn-primary float-right">+</button>
+                                 <button class="counter-minus btn btn-primary float-right">-</button>
+                                 
+                                 <form action= "HomeA" method="post">
+                                <button type="submit" class="btn btn-circle btn-sm btn-primary float-left">A</button>
+                                     
+									 <input type="text" value="0" class="float-right" name="absent1">
+									 
+									 </form>
+									 
+                                </div>
+                                </div>															
+                                </div>
+								
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <div class="container pad">
+    <div class="row">
+                        <div class="col-lg-12 col-xl-6 d-flex">
+                            <div class="card flex-fill">
+                            
+                                <div class="card-header">
+                                <div class="container margin-top">
+                                
+                                <form action="Subject" method="post">
+								 <input type="text" name="input3" class="float-left">  
+								<button type="Submit" class="btn btn-primary"> <span id='input3'>Enter</span></button>
+								
+								</form>
+								<br>
+								<br>
+								
+                                <div class="handle-counter" id="handleCounter4">
+                                <button class="counter-plus btn btn-primary float-right" >+</button>
+                                 <button class="counter-minus btn btn-primary float-right" >-</button>
+                                 
+                                 <form action= "Home" method="post">
+                                     <button type="submit" name="Submit"class="btn btn-circle btn-sm btn-primary float-left">P</button> 
+									 <input type="text" value="0" class="float-right" name="present2" >
+									 </form>
+                              
+                                    
+                                </div>
+								</div>
+								</div>
+                                <div class="card-body my-1">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                        	
+                                        	 <form action = "Sub">
+                                       <button type="submit" name="Submit2" class="btn btn-primary" value="1">Details</button>
+                                       </form>
+                                        	
+                                        </div>
+                                    </div>       
+                                </div>
+								<div class="card-header">
+                                <div class="container margin-top">
+                                
+                                <div class="handle-counter" id="handleCounter5">
+                                <input type="text" name="sum2" class="float-left"> 
+								<button type="button" class="btn btn-circle btn-sm btn-primary float-left" onclick="per2()">%</button>
+								<button class="counter-plus btn btn-primary float-right">+</button>
+                                 <button class="counter-minus btn btn-primary float-right">-</button>
+                                 
+                                 <form action= "HomeA" method="Post">
+                                <button type="submit" class="btn btn-circle btn-sm btn-primary float-left">A</button>
+                                 <input type="text" value="0" class="float-right" name="absent2">
+									 
+									 </form>
+								</div>
+                                </div>	
+                                </div>
+                  				
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-12 col-xl-6 d-flex">
+                            <div class="card flex-fill">
+                                <div class="card-header">
+								<div class="container margin-top">
+								
+								<form action="Subject" method="post">
+								 <input type="text" name="input4" class="float-left">  
+								<button type="Submit" class="btn btn-primary"> <span id='input4'>Enter</span></button>
+								
+								</form>
+								<br>
+								<br>
+								
+                                <div class="handle-counter" id="handleCounter6">
+                                <button class="counter-plus btn btn-primary float-right" >+</button>
+                                 <button class="counter-minus btn btn-primary float-right" >-</button>
+                                 
+                                 <form action= "Home" method="Post">
+                                     <button type="submit" name="Submit"class="btn btn-circle btn-sm btn-primary float-left">P</button> 
+									 <input type="text" value="0" class="float-right" name="present3" >
+									 </form>   
+                                     
+                                </div>
+								</div>
+								</div>
+                                <div class="card-body my-1">
+                                    <div class="row d-flex align-items-center mb-4">
+                                        <div class="col-8">
+                                        	
+                                        	 <form action = "Sub">
+                                       <button type="submit" name="Submit3" class="btn btn-primary" value="1">Details</button>
+                                       </form>
+                                        	
+                                        </div>
+                                    </div>   
+                                </div>
+								<div class="card-header">
+								<div class="container margin-top">
+								
+                                <div class="handle-counter" id="handleCounter7">
+                                <input type="text" name="sum3" class="float-left"> 
+								<button type="button" class="btn btn-circle btn-sm btn-primary float-left" onclick="per3()">%</button>
+								<button class="counter-plus btn btn-primary float-right">+</button>
+                                 <button class="counter-minus btn btn-primary float-right">-</button>
+                                 
+                                 <form action= "HomeA" method="post">
+                                <button type="submit" class="btn btn-circle btn-sm btn-primary float-left">A</button>
+                                 <input type="text" value="0" class="float-right" name="absent3">
+									 
+									 </form>
+                                </div>
+								</div>
+								</div>									 
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p id="value"></p>
+
+</div>
+</div>
+</body>
+</html>
+<script>
+
+   
+function per(){
+	let plus = document.getElementsByName("present")[0].value;
+	let minus = document.getElementsByName("absent")[0].value;
+	let p = (Number(plus)*100)/(Number(plus)+Number(minus));
+    document.getElementsByName("sum")[0].value = p;
+}
+
+    function per1(){
+	let plus1 = document.getElementsByName("present1")[0].value;
+	let minus1 = document.getElementsByName("absent1")[0].value;
+	let p1 = (Number(plus1)*100)/(Number(plus1)+Number(minus1));
+    document.getElementsByName("sum1")[0].value = p1;
+}
+function per2(){
+	let plus2 = document.getElementsByName("present2")[0].value;
+	let minus2 = document.getElementsByName("absent2")[0].value;
+	let p2 = (Number(plus2)*100)/(Number(plus2)+Number(minus2));
+    document.getElementsByName("sum2")[0].value = p2;
+}
+function per3(){
+	let plus3 = document.getElementsByName("present3")[0].value;
+	let minus3 = document.getElementsByName("absent3")[0].value;
+	let p3 = (Number(plus3)*100)/(Number(plus3)+Number(minus3));
+    document.getElementsByName("sum3")[0].value = p3;
+}
+
+
+	
+</script>
+<script src="Homejquery.js"></script>
+<script src="Homebutton.js"></script>
+
+<script type="text/javascript">
+
+
+$(function ($) {
+            var options = {
+                minimum: 0,
+                maximize: 500,
+                onChange: valChanged,
+                onMinimum: function(e) {
+                    console.log('reached minimum: '+e)
+                },
+                onMaximize: function(e) {
+                    console.log('reached maximize'+e)
+                }
+            }
+            $('#handleCounter').handleCounter(options)
+            $('#handleCounter1').handleCounter(options)
+			$('#handleCounter2').handleCounter(options)
+            $('#handleCounter3').handleCounter(options)
+			$('#handleCounter4').handleCounter(options)
+            $('#handleCounter5').handleCounter(options)
+			$('#handleCounter6').handleCounter(options)
+            $('#handleCounter7').handleCounter(options)
+        })
+        function valChanged(d) {
+//            console.log(d)
+        }		
+
+
+</script>
+
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">

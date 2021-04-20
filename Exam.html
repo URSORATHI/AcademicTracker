@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Exam</title>
+<link rel="stylesheet" type="text/css" href="Examsty.css">
+<script src="https://kit.fontawesome.com/79bb4623b2.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="sidebar">
+        <h2>MENU</h2>
+        <ul>
+            <li><a href="Home.html"><i class="fas fa-home"></i>Home</a></li>
+			
+            <li><a href="Exam.html"><i class="fas fa-graduation-cap"></i>Exam</a></li>
+			<li><a href="Tracker.html"><i class="fas fa-chart-bar"></i>Tracker</a></li>
+        </ul> 
+    </div>
+    <div class="main_content">
+        <div class="header">
+        <h2>Academic Tracker</h2>
+		</div>
+	
+<form action="Exam" method= "post" class="center" name="myForm">
+	 <table>
+	 <tr class="enter">
+	 <td>Enter Exam:</td><td><input type="text" name="Exam" class="input"></td><td><button onclick="onform()" class="Button">Add Exam</button>
+	 </tr>
+	 </table>
+	 <div class="form-popup" id="myform" >
+	 <form class="form-container">
+	 <div>
+	 <table class="table-center"  >
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject1" required></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks1" required></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject2" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks2" required ></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject3" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks3" ></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject4" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks4"></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject5" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks5"></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject6" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks6"></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject7" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks7"></td>
+	 </tr>
+	 <tr>
+	 <td>Enter Subject:</td><td><input type="text" name="Subject8" ></td><td> </td><td>Subject marks:</td><td><input type="text" name="Marks8"></td>
+	 </tr>
+	 </table>
+	 </div>
+	 </form>
+     <button type="submit" value ="Submit" class="Btn-Sub">Submit</button>
+      
+	 </div>
+	 
+	 </form>
+	  
+</div>
+</div>
+<script>
+function onform() {
+var x = document.forms["myForm"]["Exam"].value;
+if(x=="")
+{
+alert("Exam name should be filled");
+return false;
+ }
+ else{
+ 
+  document.getElementById("myform").style.display = "block";
+  }
+}
+
+
+	</script>
+</body>
+</html>
